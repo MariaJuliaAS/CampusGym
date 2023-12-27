@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusGym</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <p>CampusGym</p>
+    </header>
+
+    <main class="container">
+        <section class="cadastro">
+            <div class="contentCadastro">
+                <div class="textCadastro">
+                    <h1>Cadastro</h1>
+                </div>
+
+                <form>
+                    <label>Nome:</label>
+                    <input type="text" name="inputName" id="inputName" require placeholder="Maria Júlia Araújo Silva">
+                    <label>Curso:</label>
+                    <input type="text" name="inputCurso" id="inputCurso" require placeholder="Ciência da computação">
+                    <label>Período:</label>
+                    <input type="number" name="inputPeriodo" id="inputPeriodo" require placeholder="1">
+                    <label>Turno:</label>
+                    <select name="inputTurno" id="inputTurno">
+                        <option value="Matutino">Matutino</option>
+                        <option value="Vespertino">Vespertino</option>
+                        <option value="Noturno">Noturno</option>
+                        <option value="Integral">Integral</option>
+                    </select>
+                </form>
+
+                <div class="buttonsCadastro">
+                    <button type="button" onclick="cadastrar()">Cadastrar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabela" id="tabela">
+            <div class="contetnTabela">
+                <div class="inputSearch">
+                    <input type="search" name="inputSearch" id="inputSearch" placeholder="Pesquisar...">
+                </div>
+                
+                <div class="tableElement">
+                    <table border="1" id="table">
+                        <thead id="thead">
+                            <tr>
+                                <th>Nome</th><th>Curso</th><th>Período</th><th>Turno</th><th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="semAlunos"></div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
